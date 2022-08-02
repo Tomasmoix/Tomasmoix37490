@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+main{
+    min-width: 100%;
+    min-height: 800px;
+    background-color: rgb(75, 54, 37);
+    padding: 30px;
+}  
+.header{
+    background-color: black;
+    min-height: 100px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(75, 54, 37);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 80px;
+    height: 70px;
+}
+.header__carrito{
+    text-decoration: none;
+    padding-top: 20px;
+    font-size: 40px;
+    color: white;
+}
+.header__carrito:hover{
+    color: black;
+    cursor: pointer;
+}
+#carrito{
+    width: 40%;
+    height: 100%;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    right: -100%;
+    transition: right 1s;
+}
+
+.carrito__seccion{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.titulo__carrito{
+    font-weight: bold;
+    font-size: 25px;
+}
+.x__carrito{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+.x__carrito:hover{
+    color: red;
+}
+.carrito__productos{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 30px;
+    min-height: 500px;
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+
+}
+.carrito__formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+#agregar__productos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.carrito__boton{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(86, 86, 158) ;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.carrito__boton:hover{
+    background-color: rgb(40, 2, 255);
+}
+.boton__eliminar{
+    background-color: transparent;
+    border: none;
+}
+.trash{
+    font-size: 18px;
+    color: rgb(157, 92, 177);
+    cursor: pointer;
+}
+.trash:hover{
+    color: red;
+}
+.carrito__total{
+    font-size: 20px;
+    text-align: end;
+}
+.seccion__titulo {
+    font-size: 40px;
+    font-style: italic;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(75, 54, 37);
+    border-top: none;
+    border-bottom: none;
+}
+
+.seccion__cards{
+    padding: 1rem;
+    width: 100%;
+    min-height: 1000px;
+    border: 3px solid rgb(75, 54, 37);
+    border-top: none;
+    border-bottom: none;
+}
+#conteiner__cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 2rem;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 250px;
+    max-height: 350px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid white ;
+   
+}
+.cards__img{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.cards__titulo{
+    text-align: center;
+    color: rgb(77, 77, 77);
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.cards__descripcion{
+    padding: 3px;
+}
+.cards__precio{
+    padding-bottom: 5px;
+    padding-left: 3px;
+}
+.cards__button{
+    width: 100%;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(86, 86, 158);
+    cursor: pointer;
+}
+.cards__button:hover{
+    background-color: rgb(40, 2, 255);
+}
+.footer{
+    background-color: #000000;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer__text {
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    margin-right: 400px;
+    color: aliceblue;
+   
+  }
+  .alert{
+    color: black;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+  }
